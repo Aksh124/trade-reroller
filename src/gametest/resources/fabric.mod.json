@@ -1,0 +1,10 @@
+{
+	"schemaVersion": 1,
+	"id": "tradereroller-gametest",
+	"version": "1.0.0",
+	"name": "Trade Reroller game test",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": ["tradereroller.test.TradeRerollerGameTest"]
+	}
+}

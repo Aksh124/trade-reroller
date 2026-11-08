@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "tradereroller",
+	"version": "${version}",
+	"name": "Trade Reroller",
+	"description": "Rerolls a librarian's enchanted book trade by breaking and replacing its lectern until the book you want shows up.",
+	"authors": ["Akshay"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["tradereroller.TradeRerollerClient"],
+		"modmenu": ["tradereroller.ModMenuIntegration"]
+	},
+	"mixins": [
+		{
+			"config": "tradereroller.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.0",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
